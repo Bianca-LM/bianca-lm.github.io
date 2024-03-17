@@ -1,3 +1,48 @@
 nav a {
     color: black;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+nav a:hover {
+    background-color: rgb(224, 223, 223);
+    color: black;
+}
+
+.navbar-toggler {
+    background-color: rgb(201, 201, 201);
+}
+
+.img {
+    border-radius: 50%;
+    width: 15em;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.homeNav {
+    width: 100%;
+}
+
+#Research, #Projects {
+    margin: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.project {
+    width: 50%;
+    border: 0.2em solid grey;
+}
+
+.previewLabel {
+    border-top: 0.2em solid grey;
+    padding: 2%;
+}
+
+.project a {
+    color: black
 }
