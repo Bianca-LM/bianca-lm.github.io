@@ -4,6 +4,10 @@ nav a {
     margin-right: 2%;
 }
 
+body {
+    height: 100vh;
+}
+
 nav a:hover {
     background-color: rgb(224, 223, 223);
     color: black;
@@ -11,6 +15,15 @@ nav a:hover {
 
 .navbar-toggler {
     background-color: rgb(201, 201, 201);
+}
+
+#contacts i {
+    font-size: 2.2em;
+    padding: 1%;
+}
+
+#contacts i:hover {
+    font-size: 2.5em;
 }
 
 .img {
@@ -27,14 +40,12 @@ img {
     width: 100%;
 }
 
-#Research, #Projects {
-    margin: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
+#Projects {
+    margin-bottom: 2%;
 }
 
 .project {
-    width: 50%;
+    width: 100%;
     border: 0.2em solid grey;
 }
 
@@ -45,4 +56,16 @@ img {
 
 .project a {
     color: black
+}
+
+video {
+    width: 100%;
+}
+
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    width: 100%;
+    margin-top: 4%;
+    padding-bottom: 1%;
 }
