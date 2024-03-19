@@ -10,6 +10,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="style/style.css" type="text/css"> 
+        <script src="scripts/script.js"></script>
 	</head>
     <body>
         <nav class="navbar navbar-expand-lg shadow mb-5 bg-white rounded">
@@ -30,7 +31,7 @@
 	    </nav>
         <div id="Research" class="container">
                 <h1>Research</h1><hr/>
-                <div class="row">
+                <div class="row new">
                     <div class="col-lg-12">
                         <h2>Epigrafi Latine</h2>
                     </div>
@@ -40,32 +41,34 @@
                     
                     <div class="col-lg-6">
                         <div class="project">
-                            <a href="https://projects.dharc.unibo.it/el/">
                             <div class="preview">
                                 <img src="files/images/EL.png"/>
                             </div>
                             <div class="previewLabel">
-                                See the Epigrafi Latine webpage
+                                See the 
+                                <a href="https://projects.dharc.unibo.it/el/">Epigrafi Latine</a> webpage
                             </div>
-                            </a>
                         </div>  
                     </div>  
                     <div class="col-lg-6">
-                        <p>Customization of the CLEF application to show the data gathered by the project "Epigrafi Latine", I have worked during my Research Grant at the FICLIT Department of the Unviersity of Bologna.</p>
-                        <p>What I implemented: 
+                        <p>Digital Collection of the data gathered as part of the project "Epigrafi Latine a Bologna". The web application has been developed with <a href="https://polifonia-project.github.io/clef/">CLEF</a> and manages data-entry and data visualization.</p>
+                        <p>My contributions:  
                             <ul>
-                                <li>Conceptual Schema for the data entry.</li>
-                                <li>Interactive map to show the resources on place, with filter functionalities.</li>
-                                <li>Front-End managemnt of the login and users registration, and customization of users role.</li>
+                                <li>Data modelling and creation of the templates for the data entry in Linked Open Data.</li>
+                                <li>Building the interactive map with <a href="https://leafletjs.com/">Leaflet.js</a> to show the resources on place, with filter functionalities. The items are located through geocoding.</li>
+                                <li>Front-End managemnt of the login and users registration, and customization of users' roles.</li>
                             </ul>
                         </p>
-
+                        <div class="tags">
+                            <span>Web Application</span> <span>Interactive Map</span> <span>Data Modelling</span> <span>Semantic Web</span> <span>Geocoding</span>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row new">
                     <div class="col-lg-12">
                         <h2>Historical Cartographies</h2>
                     </div>
+
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
@@ -76,21 +79,76 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-
-                        <p>Presentation for the thesis dissertation for the final exam of the M.A. in Digital Humanities and Digital Knowledge. <br/>
+                        <p>Presentation for the thesis dissertation for the final exam of the M.A. in Digital Humanities and Digital Knowledge.
                         </p>
-
+                        <p>
+                            Highlights: 
+                        <ul>
+                            <li>Data model for the management of spatial, platial and temporal information related to historical cartographies</li>
+                            <li>Georeferencing raster images on a digital-born map</li>
+                            <li>Design of an interactive map that manages spatial, semantic and temporal information, as well as statistical analysis</li>
+                            <li>Data integration with third-party datasets.</li>
+                        </ul>
+                        </p>
+                        <div class="tags">
+                            <span>Georeferencing</span> <span>Interactive Map</span> <span>Data Modelling</span> <span>GIS technologies</span> <span>Web Application</span> <span>SPARQL</span>
+                        </div>
                     </div>
                 </div>
         </div>  
         <div id="Projects" class="container">
             <h1>Projects</h1><hr/>
+            <p>Projects developed during the courses of the M.A. "Digital Humanities and Digital Knowledge, University of Bologna.</p>
+            <div class="row new">
+                <div class="col-lg-12">
+                    <h2>OM&TA (Ontology of Materials and Techniques in Art)</h2>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-lg-6">
-
+                    <div class="project">
+                        <div class="preview">
+                            <img src="files/images/OMETA.png"/>
+                        </div>
+                        <div class="previewLabel">
+                            See the <a href="https://bianca-lm.github.io/art-criticism-ontology/">OM&TA website</a> for the ontology documentation
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
-                    
+                    <p>
+                        OM&TA is the ontology of materials and techniques in art. It tries to formalize and represent the relationships between the external formal data about an artwork and its components as define by art criticism, with a particular focus on the relationship between the materials used and the techniques performed on them in order to obtain the final results.
+                    </p>
+                    <p>Take a look at the <a href="https://github.com/Bianca-LM/art-criticism-ontology">Github Repository</a> of the project.</p>
+                    <div class="tags">
+                        <span>SPARQL</span> <span>RDF</span> <span>Omtology Design</span> <span>Knowledge Graph</span> <span>Knowledge Extraction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row new">
+                <div class="col-lg-12">
+                    <h2>Historical Cartographies</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="project">
+                        <div class="preview" id="slideshow">
+                           <img src="files/images/CoolDown.png"/>  
+                           <img src="files/images/CoolDownOld.png"/>        
+                           <span id="arrow" onclick="showSlides()">&#11166;</span>      
+                        </div>
+                        <div class="previewLabel">
+                            See the <a href="https://bianca-lm.github.io/coolDown/">Cool Down!</a> webpage
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-6">
+                    <p>Cool Down! has been thought as an online magazine focused on environmental problems. The purpose of this web site is to explore various types of typographic and layout style for text documents through the use of HTML, CSS and JavaScript.</p>
+                    <p><a href="https://github.com/Bianca-LM/coolDown">Github Repository</a> of the project</p>
+                    <div class="tags">
+                        <span>Magazine Website</span> <span>HTML-CSS-Javascript</span> <span>Web Technologies</span>
+                    </div>
                 </div>
             </div>
         </div>
