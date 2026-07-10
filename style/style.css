@@ -22,13 +22,37 @@ nav a:hover {
     padding: 0.5em;
 }
 
-#contacts i, #contacts img {
+#contacts, #affiliations {
+    text-align: center;
+    margin: 1%;
+}
+
+#contacts i, .icon, #affiliations i {
     font-size: 2.2em;
     padding: 1%;
     width: 1.8em;
 }
 
-#contacts i:hover, #contacts img:hover {
+.icon img {
+    text-align: center;
+}
+
+.icon, .icon-text {
+    display: inline-grid;
+    text-align: center;
+}
+
+.icon-text {
+    padding: 1%;
+    vertical-align: bottom;
+    margin: 1%;
+}
+
+.icon span {
+    font-size: 0.4em;
+}
+
+#contacts i:hover, #affiliations i:hover, .icon:hover {
     font-size: 2.5em;
 }
 
