@@ -23,29 +23,26 @@ nav a:hover {
 }
 
 #contacts, #affiliations {
-    text-align: center;
     margin: 1%;
+    margin-bottom: 1em;
 }
 
 #contacts i, .icon, #affiliations i {
     font-size: 2.2em;
     padding: 1%;
     width: 1.8em;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .icon img {
     text-align: center;
-}
-
-.icon, .icon-text {
-    display: inline-grid;
-    text-align: center;
+    width: 4em;
 }
 
 .icon-text {
     padding: 1%;
-    vertical-align: bottom;
-    margin: 1%;
+    vertical-align: middle;
 }
 
 .icon span {
